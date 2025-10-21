@@ -9,11 +9,21 @@ public abstract class Character : MonoBehaviour
     protected Animator anim;
     protected Rigidbody2D rb;
 
+    //Initialized
+    public void Initialize(int startHealth)
+    {
+        Health = startHealth;
+        Debug.Log($"{this.name} initial Health: {this.Health}");
+
+        anim = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody2D>();
+    }
     //methods
     public void TakeDamage(int damage)
     {
         Health -= damage;
         Debug.Log($"{this.name} took damage {damage}. Current Health: {Health}");
+        IsDead();
     }
 
     public bool IsDead()
@@ -26,4 +36,5 @@ public abstract class Character : MonoBehaviour
         }
         else return false;
     }
+    
 }

@@ -2,15 +2,7 @@ using UnityEngine;
 
 public abstract class Enemy : Character
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public int DamageHit { get; set; }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public abstract void Behavior();
 }
