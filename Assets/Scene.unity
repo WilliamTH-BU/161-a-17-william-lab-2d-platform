@@ -1005,6 +1005,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfe3b9afd8c620847a982d9c126e1ea8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  atkRange: 0
+  player: {fileID: 0}
 --- !u!1001 &716224994
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2243,7 +2245,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!1001 &1420468291
 PrefabInstance:
   m_ObjectHideFlags: 0
